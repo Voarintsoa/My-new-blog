@@ -5,19 +5,36 @@
     </head>
     <body>
         <header>
-            <h1><a href="/">Blog Django Girls</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </header>
-
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon premier article</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </article>
-
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon second article</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </article>
+        
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">django girls 5ème édition</a></h2>
+                <p>Le weekend dernier, j’ai participé à une chose que je n’aurais jamais pensé faire un jour. Une chose qui me semblait être impossible à capter, qui ne méritait même pas d’entrer dans ma pauvre petite tête.
+                    Cette chose était un atelier nommé Django Girls . Pour ceux qui ne le savent pas Django Girls c’est aussi une ONG et une communauté qui vise à initier les femmes/filles à la programmation informatique et au monde du web en une journée.Donc, le fait de pouvoir participer à ce genre d’event me rend encore perplexe, puisque comme je l’ai dit un peu plus haut, je ne pensais pas avoir les capacités nécessaires pour.
+                    L’idée d’y participer m’est venue sur un coup de tête, un matin, au réveil, comme tout le monde, avant de me lever j’ai scrollé mon feed facebook pour connaître les nouvelles et tout ce que l’on peut voir sur la toile. Puis vient la publication de la page Django Girls Antananarivo sur laquelle il y avait eu un lien d’inscription pour l’atelier.
+                    Sans y avoir vraiment réfléchis à 2 fois, j’ai complété la fameuse fiche d’inscription en ligne, sans rien espérer en retour. Vous aussi, vous avez ce trip de faire une chose sans connaître la suite, sans rien espérer mais juste le fait de l’avoir fait vous rend bien? Et que des fois c’est le contraire? Genre, vous avez peur de le faire parce que vous ne croyez pas à vos compétences? Bah, moi j’ai les 2 moods mais heureusement ils savent biens se balancer &#128512
+                    ; du coup, je ne foire plus beaucoup d’opportunité ^^’
+                    Et puis, un jour, à mon réveil, en activant la connexion de mon téléphone, c’était le premier e-mail que j’ai reçu, que ma candidature pour l’atelier a été retenue . Ma tête ressemblait un peu à ça :Je vous le jure, je ne m’y attendais pas du tout, en plus je ne me suis pas souvenue de ce que j’ai pu écrire dans la fiche d’inscription puisque j’étais pas encore très bien réveillée ^^’
+                    Viens alors ce fameux weekend, là où j’allais découvrir de nouvelles choses: saurais-je m’adapter? allais-je comprendre un truc? serais-je plus sociable? aurait-il à manger? … Beaucoup de questions ce sont entremêlées dans ma tête, depuis ma descente du bus jusqu’à ce que j’arrive chez Ivotech (Ivotech c’est le nouveau centre pour développeurs qui se trouve à Ankatso).
+                    De loin, je vois beaucoup de jeunes filles enthousiastes avec leur cartable. Dans ma tête j’essayais de voir où est-ce qu’elles allaient, est-ce que ce sont les autres participantes ou des étudiants de l’université? J’ai fais plein d’analyse dans ma tête (typique d’une overthinker sorry).
+                    Arrivée au centre, il y avait déjà pleins de gens, pour ne pas répéter filles plusieurs fois xD. De mon point de vue, toutes étaient si différentes, et en majorité ne se connaissaient pas encore et étaient assez timides (ou c’est moi qui l’étais? Je ne sais pas).
+                    Viens l’enregistrement et le dispatch des filles dans des groupes. En tout il y avait 8 groupes, tout au nom de plusieurs femmes qui ont une grande influence dans ce monde. Pour ma part, j’étais dans le groupe Mary Jackson, une mathématicienne et ingénieure en aérospatial américaine qui a travaillé pour la NASA &#128578
+                    ;
+                                  La première demi-journée du Samedi consistait à installer les différents logiciels qui nous seront utiles pour coder.On a eu quelques petits soucis mais rien de bien anormal avec la connexion qu’on a ici. Mais au final, on a pu finir à temps l’install party.
+                    Donc, à la fin de la première demi-journée, nos armes étaient à point, prêtent pour passer à l’attaque.
+                    Le jour J, un dimanche de bon matin, très tôt le matin puisqu’en temps normal les Dimanches pour moi c’est dodo jusqu’à 10h unh, mais cette fois, je me suis réveillée très tôt (à 7h ! &#128558
+                    ; ) pour rejoindre l’atelier et ne pas être en retard :’D
+                    A mon arrivée chez Ivotech, la salle était déjà remplie de petites personnes avec des Tshirts blancs avec « Django Girls » écrit dessus. Elles étaient partout dans la salle devant leur gears prêtent à se lancer.
+                    On a alors commencé petit à petit, on avait un tutoriel à notre disposition mais aussi un mentor, qui était génial parce qu’il n’avait pas mal pris mes jeux de mots pourris xD -_- ^^’ On avait différentes fenêtres ouvertes sur notre ordi: l’éditeur de texte, l’interface de commande, des siteweb and so on and so on …
+                                     Quelques heures plus tard, on a commencé à entendre des cris de joies un peu partout dans la salle, parce que oui, on savait maintenant faire quelque chose d’autre sur notre ordinateurs à part checker son facebook ou faire de long texte sur word.Pendant tout ce temps, on a oublié notre estomac; genre la faim n’a même pas cogner à mon ventre, moi qui suis une grande gourmande. Les organisatrices ont dû intervenir pour que l’on puisse se rafraîchir un peu et décoller nos yeux de l’écran tellement on était absorbé dedans.
+                                     Vers 16h30, c’était la fin de la journée, de l’atelier. Des certificats ont été remises aux participantes et puis vient la photo de groupe !!!Noob que je suis est très reconnaissante d’avoir participer à ce genre d’event, j’étais choquée quand j’ai su que j’étais acceptée mais encore plus maintenant quand je me rends compte que oui, je l’ai vraiment fait cet atelier. Je suis maintenant Fourchelangue :D. Un grand meeeerrrrrcccccciiiii aux organisatrices, aux mentors, à Ivotech et aux autres partenaires.
+                    Et surtout, merci pour la bouffe et les goodies (je suis une grande fan des stickers :D)
+                                            Pour celles qui sont intéressées je vous invite donc à checker leur page Django Girls Antananarivo  pour suivre leurs activités et connaitre les informations.
+                    L’article est très long par rapport à mes autres articles mais merci à vous qui a pu lire jusqu’à la fin, merci pour votre patience ^_^</p>
+            </article>
+        {% endfor %}
     </body>
 </html>
